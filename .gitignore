@@ -1,0 +1,12 @@
+# Python / Django
+__pycache__/
+*.pyc
+problem2/ipl_backend/db.sqlite3
+/venv/
+/env/
+
+# Node / React
+problem2/ipl_frontend/node_modules/
+problem2/ipl_frontend/dist/
+problem2/ipl_frontend/.env
+npm-debug.log
