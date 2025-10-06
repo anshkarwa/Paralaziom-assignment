@@ -1,6 +1,8 @@
 Problem 1: COCO
 
 2. How would you split this dataset into train/val/test while preserving category balance?
+
+   
 Ans : Randomly splitting a COCO dataset is risky, as it can create unbalanced training and test sets where rare objects are missing from one split. For reliable results, you need to preserve the category distribution.
 The best approach is stratified sampling. Since images have multiple labels, use a technique called "iterative stratification" (found in libraries like scikit-multilearn). This method intelligently assigns images, prioritizing rare categories to ensure they are fairly distributed across your train, validation, and test sets. Finally, create a new, self-contained JSON file for each split, containing only its assigned images and annotations.
 
@@ -17,6 +19,8 @@ Includes only the images that were assigned to that split.
 Includes only the annotations that belong to those specific images.
 
 3. How would you detect duplicate annotations in a COCO dataset? What fields would you compare?
+
+
 Ans : A duplicate annotation is when the exact same object in the same image is labeled more than once.
 To catch them, you check for annotations that are identical in a few key ways:
 image_id: They're in the same image.
@@ -31,6 +35,8 @@ If not, add the key to the set.
 This method is great for perfect duplicates. Finding near-duplicates (where boxes are off by a few pixels) requires a more complex approach, like checking for high Intersection over Union (IoU).
 
 4. Find out if there is class imbalance here.
+
+
 Ans : Yes, we can tell whether there is class imbalance by checking how many annotations exist for each category.
 
 Annotation Counts per Category:
