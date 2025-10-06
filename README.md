@@ -57,3 +57,11 @@ Conclusion:
 There is a very slight class imbalance, but the dataset overall is fairly well-balanced.
 
 The most common categories ("bicycle," "fire hydrant") occur 32 times, while the least common category ("bus") occurs 24 times. The ratio of the most common to the least common class is only 1.33-to-1 (32 / 24). In actual dataset applications, ratios of 10-to-1 and even 100-to-1 can be common. Since all classes are well-served with an equal number of samples, this dataset would not need special methods (such as over-sampling or loss weighting) to cope with class imbalance.
+
+
+Problem 2 : IPL Dashboard
+
+<img width="905" height="833" alt="Screenshot 2025-10-07 021024" src="https://github.com/user-attachments/assets/5b7c93e5-3d35-49f6-80e8-7ba19095ae36" />
+
+<img width="778" height="827" alt="Screenshot 2025-10-07 021038" src="https://github.com/user-attachments/assets/2d194e8f-d636-411d-8cc2-e02ad4837abf" />
+
